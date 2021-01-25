@@ -1,1 +1,1 @@
-# simply-newtab
+# Simply New Tab - Chrome Extension

@@ -1,1 +1,1 @@
-# Simply New Tab - Chrome Extension
+# Simply New Tab - Browser Extension

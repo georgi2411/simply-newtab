@@ -1,0 +1,127 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #696969;
+}
+
+a {
+  text-decoration: none;
+}
+
+#background-image {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: radial-gradient(48.28% 48.28% at 50% 51.72%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  width: 50%;
+  max-width: 800px;
+  min-height: 160px;
+}
+@media only screen and (max-width: 1000px) {
+  .search-container {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .search-container {
+    width: 90%;
+  }
+}
+.search-container .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 42px;
+  font-size: 2.2rem;
+  cursor: default;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.44);
+}
+.search-container input {
+  width: 100%;
+  height: 75px;
+  border-radius: 15px;
+  border: none;
+  padding: 0;
+  font-size: 1.4rem;
+  opacity: 0.8;
+  margin-top: 40px;
+  text-indent: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.search-container input:focus {
+  outline: none;
+}
+
+.author-container {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+.author-container:hover #author, .author-container:hover #source {
+  opacity: 0.6;
+}
+.author-container #author, .author-container #source, .author-container #country {
+  font-size: 0.8rem;
+  color: #ffffff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.author-container #author, .author-container #source {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+.author-container #country {
+  cursor: default;
+  opacity: 0.6;
+  font-weight: 600;
+}
+
+.fadein {
+  animation: fadeIn 900ms ease-out 0s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

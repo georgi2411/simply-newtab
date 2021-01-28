@@ -39,7 +39,7 @@ export default class BackgroundService {
 		];
 		const randomQuery = queries[Math.floor(Math.random() * queries.length)];
 
-		const response = await fetch(`https://api.unsplash.com/photos/random?query=${randomQuery}`, {
+		const response = await fetch(`https://api.unsplash.com/photos/random?orientation=landscape&query=${randomQuery}`, {
 			headers: {
 				"Authorization": `Client-ID ${key}`
 			}

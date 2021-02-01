@@ -1,4 +1,4 @@
-# Simply New Tab - Browser Extension
+# Simply New Tab - Chrome Extension
 
 ![Extension Image](./assets/extension.png "Extension Image")
 
